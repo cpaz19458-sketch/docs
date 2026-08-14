@@ -1,4 +1,13 @@
----
+# Good
+export OPENAI_API_KEY="example-openai-key-not-real"
+
+# Better (when the doc is about env wiring)
+export OPENAI_API_KEY="${OPENAI_API_KEY}"
+---# Good
+export OPENAI_API_KEY="example-openai-key-not-real"
+
+# Better (when the doc is about env wiring)
+export OPENAI_API_KEY="${OPENAI_API_KEY}"
 summary: "Secret-scanner-safe placeholder conventions for docs and examples"
 read_when:
   - Writing docs that include tokens, API keys, or credential snippets
